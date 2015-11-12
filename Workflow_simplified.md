@@ -76,7 +76,9 @@ number of reads mapped to exons, input concentration of RNA).
 
 Samples with less than 6 mln mapped non-duplicate reads were not
 considered for this analysis. *Outliar* samples (sample 11 and
-sample 15) were not considered for this analysis either.
+sample 15) were not considered for this analysis either. Expression
+was calculated as read counts normalized for the number of reads
+mapped without duplicates.
 
 `CSF2` should be expressed in GM-CSF cells (CSF+ samples and
 IL17A+GMCSF+IFN- samples):
