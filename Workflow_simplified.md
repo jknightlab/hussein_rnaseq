@@ -80,11 +80,12 @@ sample 15) were not considered for this analysis either. Expression
 was calculated as read counts normalized for the number of reads
 mapped without duplicates.
 
-|  |   |
-| ---- | ---- |
-| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_CSF2.png)
- | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IL17A.png) |
+|     |     |
+| --- | --- |
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_CSF2.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IL17A.png) |
 | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IFNg.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_PTPRC.png)|
+
+
 
 
 `CSF2` should be expressed in GM-CSF cells (CSF+ samples and
