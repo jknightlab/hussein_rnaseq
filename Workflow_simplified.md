@@ -108,7 +108,8 @@ on the sorted bam files without duplcates.
 htseq-count --format=bam --stranded=reverse input.bam annotation
 ```
 
-Gendoce and Ensembl annotation was used, howeve, the number of reads
+[GENCODE](http://www.gencodegenes.org/releases/19.html)
+Ensembl annotation was used, howeve, the number of reads
 mapped to known genes is really low.
 
 | sample name    | mapped reads | mapped to v19 | %mapped to v19| mapped to scaff | mapped to v22|
@@ -134,5 +135,6 @@ mapped to known genes is really low.
 | WTCHG_218577_219 |  4,625,853 | 1,390,807 | 30.066  | 190,958 | 1,391,718 |
 | WTCHG_218577_220 | 19,982,997 | 6,271,561 | 31.3845 | 867,748 | 6,273,386 |
 
-
+The correlation between the number of nodup mapped reads and reads
+mapped to known genes is 0.998.
 
