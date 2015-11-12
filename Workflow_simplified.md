@@ -69,10 +69,14 @@ number of reads mapped to exons, input concentration of RNA).
 
 Plots with general statistics:
 
-|    |    |
-| -- | -- |
-|  ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/sequenced_reads.png)  |  ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads.png)  |
-|  ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads_nodup.png)  |  ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/input_yield_vs_nodup_reads.png)  |
+|     |     |
+| --- | --- |
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/sequenced_reads.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads.png) |
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads_nodup.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/input_yield_vs_nodup_reads.png)|
+
+
+
+
 
 
 ### Expression of control genes
