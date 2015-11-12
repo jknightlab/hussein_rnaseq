@@ -112,7 +112,7 @@ Gendoce and Ensembl annotation was used, howeve, the number of reads
 mapped to known genes is really low.
 
 | sample name    | mapped reads | mapped to v19 | %mapped to v19| mapped to scaff | mapped to v22|
-| ----------------a | ---------- | --------- | ------- | ------- | --------- |
+| ---------------- | ---------- | --------- | ------- | ------- | --------- |
 | WTCHG_218577_201 | 21,101,017 | 6,617,021 | 31.3588 | 950,262 | 6,619,097 |
 | WTCHG_218577_202 | 20,517,020 | 6,502,143 | 31.6915 | 904,026 | 6,504,396 |
 | WTCHG_218577_203 | 20,959,603 | 6,707,152 | 32.0004 | 955,411 | 6,709,549 |
