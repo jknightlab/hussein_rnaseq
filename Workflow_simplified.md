@@ -80,6 +80,12 @@ sample 15) were not considered for this analysis either. Expression
 was calculated as read counts normalized for the number of reads
 mapped without duplicates.
 
+| pic1 | pic2 |
+| ---- | ---- |
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_CSF2.png)
+ | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IL17A.png) |
+
+
 `CSF2` should be expressed in GM-CSF cells (CSF+ samples and
 IL17A+GMCSF+IFN- samples):
 
