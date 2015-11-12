@@ -66,5 +66,34 @@ number of reads mapped to exons, input concentration of RNA).
 | WTCHG_218577_215 | Cyt-        | 200 | 35,542,868 | 29,014,524 | 21,229,271 | 6,807,790 |
 | WTCHG_218577_220 | 45RA+Cyt-   | 200 | 35,810,572 | 29,060,863 | 19,982,997 | 6,271,561 |
 
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/sequenced_reads.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads_nodup.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/input_yield_vs_nodup_reads.png)
+
+
+### Expression of control genes
+
+Samples with less than 6 mln mapped non-duplicate reads were not
+considered for this analysis. *Outliar* samples (sample 11 and
+sample 15) were not considered for this analysis either.
+
+`CSF2` should be expressed in GM-CSF cells (CSF+ samples and
+IL17A+GMCSF+IFN- samples):
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_CSF2.png)
+
+`IL17A+` should be expressed in IL17A+ cells (IL17A+ samples and
+IL17A+GMCSF+IFN- samples):
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IL17A.png)
+
+`IFN+` should be expressed in IFN+ samples:
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IFNg.png)
+
+`PTPRC` should be expressed in all cells:
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_PTPRC.png)
 
 
