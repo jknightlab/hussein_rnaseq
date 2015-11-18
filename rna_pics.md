@@ -1,7 +1,7 @@
 Differential gene expression
 --------------------------------------
 
-| sample_name | sequenced_reads | mapped_reads | percent_mapped | mapped_reads_nodup | percent_nodup | reads_mapped_to_exons | percent_togenes_of_sequenced | percent_togenes_of_mapped | percent_togenes_of_nodup |
+| sample_name | #sequenced | #mapped    | %mapped | $nodup     | %nodup  | #to_genes  | %to_genes_of_sequenced | %to_genes_of_mapped | %to_genes_of_nodup |
 | ----------- | ---------- | ---------- | ------- | ---------- | ------- | ---------- | ------- | ------- | ------- | 
 | KNI1766A269 | 77,384,495 | 68,589,338 | 88.6345 | 36,762,508 | 47.5063 | 15,124,594 | 19.5447 | 22.0509 | 41.1414 |
 | KNI1766A270 | 78,393,511 | 68,992,988 | 88.0085 | 34,702,600 | 44.2672 | 14,737,099 | 18.7989 | 21.3603 | 42.4668 |
@@ -24,10 +24,11 @@ Differential gene expression
 | KNI1766A287 | 18,584,017 | 16,637,880 | 89.5279 |  7,456,076 | 40.1209 |  3,103,098 | 16.6977 | 18.6508 | 41.6184 |
 | KNI1766A288 | 68,135,862 | 59,552,750 | 87.4029 | 35,526,346 | 52.1405 | 14,774,379 | 21.6837 | 24.8089 | 41.5871 |
 
-|    |    |
+| .  | .  |
 | -- | -- |
 | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_sequenced.png) | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped.png) |
-| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_nodup.png) | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_to_genes.png)|
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_nodup.png) | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_to_genes.png) |
+
 
 
 
