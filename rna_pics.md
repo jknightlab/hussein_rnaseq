@@ -1,101 +1,35 @@
 Differential gene expression
 --------------------------------------
 
-The goal of this project was, starting from the sequencing
-files provided by the Sequencing Core of WTCHG, to generate
-a list of differentially expressed genes specific per cell
-line. This was also the first sequencing performed on HiSeq4000.
+| sample_name | sequenced_reads | mapped_reads | percent_mapped | mapped_reads_nodup | percent_nodup | reads_mapped_to_exons | percent_togenes_of_sequenced | percent_togenes_of_mapped | percent_togenes_of_nodup |
+| ----------- | 
+| KNI1766A269 | 77,384,495 | 68,589,338 | 88.6345 | 36,762,508 | 47.5063 | 15,124,594 | 19.5447 | 22.0509 | 41.1414 |
+| KNI1766A270 | 78,393,511 | 68,992,988 | 88.0085 | 34,702,600 | 44.2672 | 14,737,099 | 18.7989 | 21.3603 | 42.4668 |
+| KNI1766A271 | 70,522,903 | 62,017,526 | 87.9396 | 38,567,234 | 54.6875 | 16,089,732 | 22.8149 | 25.9438 | 41.7187 |
+| KNI1766A272 | 58,098,730 | 51,781,252 | 89.1263 | 32,145,574 | 55.3292 | 13,698,577 | 23.5781 | 26.4547 | 42.6142 |
+| KNI1766A273 | 62,934,736 | 54,994,558 | 87.3835 | 35,017,566 | 55.6411 | 14,444,459 | 22.9515 | 26.2653 | 41.2492 |
+| KNI1766A274 | 62,684,598 | 54,763,016 | 87.3628 | 34,740,170 | 55.4206 | 13,931,958 | 22.2255 | 25.4405 | 40.1033 |
+| KNI1766A275 | 62,310,684 | 55,454,766 | 88.9972 | 15,185,274 | 24.3703 |  6,036,136 | 9.68716 | 10.8848 | 39.7499 |
+| KNI1766A276 | 61,592,829 | 54,616,810 | 88.674  | 25,000,494 | 40.5899 | 10,183,233 | 16.5331 | 18.6449 | 40.7321 |
+| KNI1766A277 | 47,033,855 | 41,582,474 | 88.4097 | 11,243,396 | 23.9049 |  4,559,628 | 9.69435 | 10.9653 | 40.5538 |
+| KNI1766A278 | 70,826,768 | 61,907,534 | 87.407  | 37,633,502 | 53.1346 | 15,135,376 | 21.3696 | 24.4484 | 40.2178 |
+| KNI1766A279 | 69,670,672 | 61,124,116 | 87.7329 | 34,200,938 | 49.0894 | 14,335,152 | 20.5756 | 23.4525 | 41.9145 |
+| KNI1766A280 | 67,455,873 | 59,183,454 | 87.7365 | 34,195,690 | 50.6934 | 14,296,307 | 21.1936 | 24.1559 | 41.8073 |
+| KNI1766A281 | 47,909,489 | 42,749,000 | 89.2287 |  9,637,426 | 20.1159 |  3,836,552 | 8.00792 | 8.9746  | 39.8089 |
+| KNI1766A282 | 75,221,322 | 65,974,608 | 87.7073 | 37,069,606 | 49.2807 | 15,421,122 | 20.501  | 23.3743 | 41.6004 |
+| KNI1766A283 | 68,602,461 | 59,885,416 | 87.2934 | 39,839,932 | 58.0736 | 16,705,726 | 24.3515 | 27.8962 | 41.9321 |
+| KNI1766A284 | 70,221,073 | 61,069,882 | 86.968  | 34,349,526 | 48.9163 | 14,419,124 | 20.5339 | 23.6109 | 41.9777 |
+| KNI1766A285 | 33,478,324 | 29,799,156 | 89.0103 |  6,193,486 | 18.5    |  2,516,499 | 7.5168  | 8.44487 | 40.6314 |
+| KNI1766A286 | 59,019,384 | 52,220,528 | 88.4803 | 20,629,422 | 34.9536 |  8,405,998 | 14.2428 | 16.0971 | 40.7476 |
+| KNI1766A287 | 18,584,017 | 16,637,880 | 89.5279 |  7,456,076 | 40.1209 |  3,103,098 | 16.6977 | 18.6508 | 41.6184 |
+| KNI1766A288 | 68,135,862 | 59,552,750 | 87.4029 | 35,526,346 | 52.1405 | 14,774,379 | 21.6837 | 24.8089 | 41.5871 |
 
 
-### Experimental Design
-
-Initially, five cell lines were planned to be analyzed.
-
-- Group 1: 4 CSF+ samples (sample 1, sample 6, sample 12, sample 16)
-- Group 2: 4 IL17A+ samples (sample 2, sample 7, sample 13, sample 17)
-- Group 3: 4 IFN+ samples (sample 3, sample 8, sample 14, sample 18)
-- Group 4: 3 IL17A+GMCSF+IFN- samples (sample 4, sample 9, sample 19)
-- Group 5: 3 CD45RA+Cyt- samples (sample 5, sample 10, sample 20)
-
-- Sample 11: these cells were sorted only on IFN+ by mistake and
-not IFN+, IL-17A-, GM-CSF-. Sample 11 will be most like group 3 but
-not as pure.
-
-- Sample 15: these cells are triple cytokine negative but not sorted
-on CD45. This sample will be most like group 5 but not as pure.
-
-Genes that had to be expressed specifically for each cell type:
-
-- `CSF2`  should be expressed in GM-CSF cells (group 1, group 4)
-- `IL17A` should be expressed in IL17A+ cells (group 2, group 4)
-- `IFNG`  should be expressed in IFN+ cells (group 3)
-- `PTPRC` should be expressed in all cells.
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_sequenced.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_nodup.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_to_genes.png)
 
 
-### General overview of the sequencing data
-
-This table contains general information (numbers of sequenced and
-mapped reads, number of reads retained after removing duplicates,
-number of reads mapped to exons, input concentration of RNA).
-
-
-| sample_id | sample_name | input_yield | sequenced_reads | mapped_reads | mapped_reads_nodup | reads_mapped_to_exons |
-| ---------------- | ----------- | --- | ---------- | ---------- | ---------- | --------- |
-| WTCHG_218577_201 | CSF+        | 200 | 40,173,210 | 32,989,166 | 21,101,017 | 6,617,021 |
-| WTCHG_218577_206 | CSF+        | 200 | 32,576,304 | 27,057,500 | 19,180,449 | 5,866,103 |
-| WTCHG_218577_212 | CSF+        | 200 | 35,053,260 | 28,621,153 | 19,256,351 | 6,126,567 |
-| WTCHG_218577_216 | CSF+        | 76  | 37,029,692 | 30,001,807 | 19,634,585 | 6,067,773 |
-|                  |             |     |            |            |            |           |
-| WTCHG_218577_202 | 17+         | 200 | 40,859,576 | 33,265,627 | 20,517,020 | 6,502,143 |
-| WTCHG_218577_207 | 17+         | 106 | 35,143,520 | 27,121,005 | 12,384,130 | 3,544,313 |
-| WTCHG_218577_213 | 17+         | 35  | 32,154,448 | 20,947,999 |  8,219,354 | 2,300,508 |
-| WTCHG_218577_217 | 17+         | 41  | 24,617,144 | 14,735,810 |  5,270,723 | 1,444,490 |
-|                  |             |     |            |            |            |           |
-| WTCHG_218577_203 | IFN+        | 200 | 36,854,610 | 30,311,411 | 20,959,603 | 6,707,152 |
-| WTCHG_218577_208 | IFN+        | 67  | 34,698,216 | 26,577,388 | 15,884,901 | 4,884,147 |
-| WTCHG_218577_214 | IFN+        | 200 | 38,927,282 | 31,949,794 | 20,946,987 | 6,648,301 |
-| WTCHG_218577_218 | IFN+        | 200 | 31,559,058 | 25,691,946 | 14,243,085 | 4,344,011 |
-| WTCHG_218577_211 | all-IFN+    | 200 | 36,370,218 | 29,927,242 | 19,549,866 | 6,240,346 |
-|                  |             |     |            |            |            |           |
-| WTCHG_218577_204 | 17+CSF+IFN- | 200 | 30,244,676 | 24,816,286 | 16,931,513 | 5,549,960 |
-| WTCHG_218577_209 | 17+CSF+IFN- | 103 | 26,566,806 | 20,469,532 |  9,205,932 | 2,656,030 |
-| WTCHG_218577_219 | 17+CSF+IFN- | 22  | 18,885,274 |  8,426,204 |  4,625,853 | 1,390,807 |
-|                  |             |     |            |            |            |           |
-| WTCHG_218577_205 | 45RA+Cyt-   | 200 | 33,017,564 | 27,061,188 | 19,181,889 | 5,969,109 |
-| WTCHG_218577_210 | 45RA+Cyt-   | 200 | 36,548,568 | 30,408,256 | 21,033,443 | 6,431,498 |
-| WTCHG_218577_215 | Cyt-        | 200 | 35,542,868 | 29,014,524 | 21,229,271 | 6,807,790 |
-| WTCHG_218577_220 | 45RA+Cyt-   | 200 | 35,810,572 | 29,060,863 | 19,982,997 | 6,271,561 |
-
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/sequenced_reads.png)
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads.png)
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads_nodup.png)
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/input_yield_vs_nodup_reads.png)
-
-
-### Expression of control genes
-
-Samples with less than 6 mln mapped non-duplicate reads were not
-considered for this analysis. *Outliar* samples (sample 11 and
-sample 15) were not considered for this analysis either. Expression
-was calculated as read counts normalized for the number of reads
-mapped without duplicates.
-
-`CSF2` should be expressed in GM-CSF cells (CSF+ samples and
-IL17A+GMCSF+IFN- samples):
-
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_CSF2.png)
-
-`IL17A+` should be expressed in IL17A+ cells (IL17A+ samples and
-IL17A+GMCSF+IFN- samples):
-
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IL17A.png)
-
-`IFN+` should be expressed in IFN+ samples:
-
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IFNg.png)
-
-`PTPRC` should be expressed in all cells:
-
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_PTPRC.png)
 
 
