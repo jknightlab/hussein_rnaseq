@@ -1,7 +1,7 @@
 Differential gene expression
 --------------------------------------
 
-| sample_name | #sequenced | #mapped    | %mapped | $nodup     | %nodup  | #to_genes  | %to_genes_of_sequenced | %to_genes_of_mapped | %to_genes_of_nodup |
+| sample_name | #sequenced | #mapped    | %mapped | $nodup     | %nodup  | #to_genes  | %to genes (of sequenced) | % to genes (of mapped) | % to genes (of nodup) |
 | ----------- | ---------- | ---------- | ------- | ---------- | ------- | ---------- | ------- | ------- | ------- | 
 | KNI1766A269 | 77,384,495 | 68,589,338 | 88.6345 | 36,762,508 | 47.5063 | 15,124,594 | 19.5447 | 22.0509 | 41.1414 |
 | KNI1766A270 | 78,393,511 | 68,992,988 | 88.0085 | 34,702,600 | 44.2672 | 14,737,099 | 18.7989 | 21.3603 | 42.4668 |
