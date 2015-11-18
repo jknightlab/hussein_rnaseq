@@ -1,6 +1,18 @@
 Differential gene expression
 --------------------------------------
 
+Getting the numbers of mapped reads, sequenced reads, etc:
+```
+for i in `ls *.dedup.gene.counts.txt | sed s/\.dedup.*//g`
+do
+    sequenced=`cat $i.flagstat.bam | grep QC | awk '{print $1}'`
+    mapped=`cat $i.flagstat.bam | grep properly | grep paired | grep nan | awk '{print $1}'`
+    nodup=`cat $i.flagstat.nodup.bam | grep properly | grep paired | grep nan | awk '{print $1}'`
+    togenes=`cat $i.dedup.gene.counts.txt | grep ENSG | awk '{sum += $2} END {print sum}'`
+    echo -e "$i\t$sequenced\t$mapped\t$nodup\t$togenes"
+done | awk '{print $1 "\t" $2 "\t" $3 "\t" ($3*100)/$2 "\t" $4 "\t" ($4*100)/$2 "\t" $5 "\t" ($5*100)/$2 "\t" ($5*100)/$3 "\t" ($5*100)/$4}'
+```
+
 | sample_name | #sequenced | #mapped    | %mapped | #nodup     | %nodup  | #to_genes  | %to genes (of sequenced) | % to genes (of mapped) | % to genes (of nodup) |
 | ----------- | ---------- | ---------- | ------- | ---------- | ------- | ---------- | ------- | ------- | ------- | 
 | KNI1766A269 | 77,384,495 | 68,589,338 | 88.6345 | 36,762,508 | 47.5063 | 15,124,594 | 19.5447 | 22.0509 | 41.1414 |
@@ -34,4 +46,28 @@ Plots with general statistics:
 | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_sequenced.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped.png) |
 |![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_nodup.png) |  ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_to_genes.png) |
 
+`R` code to create the plots:
+```
+png("rna_sequenced.png")
+par(mar = c(9,4,4,2))
+barplot(data$sequenced_reads/1000000, names.arg=data$sample_name, las=2, col="darkslateblue", ylab="sequenced reads, mln", main="Number of sequenced reads", ylim=c(0,82))
+dev.off()
 
+png("rna_mapped.png")
+par(mar = c(9,4,4,2))
+barplot(data$mapped_reads/1000000, names.arg=data$sample_name, las=2, col="darkslateblue", ylab="mapped reads, mln", main="Number of mapped reads", ylim=c(0,82))
+dev.off()
+
+png("rna_mapped_nodup.png")
+par(mar = c(9,4,4,2))
+barplot(data$mapped_reads_nodup/1000000, names.arg=data$sample_name, las=2, col="darkslateblue", ylab="mapped reads, mln", main="Number of mapped reads without duplicates", ylim=c(0,40))
+abline(h=10, col="red")
+abline(h=20, col="red")
+dev.off()
+
+png("rna_mapped_to_genes.png")
+par(mar = c(9,4,4,2))
+barplot(data$reads_mapped_to_exons/1000000, names.arg=data$sample_name, las=2, col="darkslateblue", ylab="mapped reads, mln", main="Number of reads mapped to known genes", ylim=c(0,40))
+abline(h=10, col="red")
+dev.off()a
+```
