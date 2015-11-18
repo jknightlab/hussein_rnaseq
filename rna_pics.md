@@ -25,17 +25,13 @@ Differential gene expression
 | KNI1766A288 | 68,135,862 | 59,552,750 | 87.4029 | 35,526,346 | 52.1405 | 14,774,379 | 21.6837 | 24.8089 | 41.5871 |
 
 
-|    |    |
-| -- | -- |
-| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_sequenced.png)   |  ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped.png)  |
 
 
-| .  | .  |
-| -- | -- |
-|  |  |
-| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_nodup.png) | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_to_genes.png) |
+Plots with general statistics:
 
-
-
+|     |     |
+| --- | --- |
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_sequenced.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped.png) |
+|![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_nodup.png) |  ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/rna_mapped_to_genes.png) |
 
 
