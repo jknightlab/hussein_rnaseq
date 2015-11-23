@@ -84,12 +84,14 @@ sample 15) were not considered for this analysis either. Expression
 was calculated as read counts normalized for the number of reads
 mapped without duplicates.
 
-- `CSF2` should be expressed in GM-CSF cells (CSF+ samples and
-IL17A+GMCSF+IFN- samples):
-- `IL17A+` should be expressed in IL17A+ cells (IL17A+ samples and
-IL17A+GMCSF+IFN- samples):
-- `IFN+` should be expressed in IFN+ samples:
-- `PTPRC` should be expressed in all cells:
+- `CSF2`, Ensembl ID `ENSG00000164400.4` should be expressed in GM-CSF cells (CSF+ samples and
+IL17A+GMCSF+IFN- samples);
+- `IL17A`, Ensembl ID `ENSG00000112115.5` should be expressed in IL17A+ cells (IL17A+ samples and
+IL17A+GMCSF+IFN- samples);
+- `IFNG`, Ensembl ID `ENSG00000027697.8` should be expressed in IFN+ samples;
+- `PTPRC`, Ensembl ID `ENSG00000081237.14` should be expressed in all cells.
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_outliars_VS_no_outliars.png)
 
 |     |     |
 | --- | --- |
