@@ -67,16 +67,12 @@ number of reads mapped to exons, input concentration of RNA).
 | IL17A+GMCSF+IFN- | 22  | 18,584,017 | 16,637,880 |  7,456,076 |  4,460,148 |
 
 
-
 Plots with general statistics:
 
 |     |     |
 | --- | --- |
 | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/sequenced_reads.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads.png) |
-| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads_nodup.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/input_yield_vs_nodup_reads.png)|
-
-
-
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads_nodup.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/reads_mapped_to_known_exons.png)|
 
 
 
