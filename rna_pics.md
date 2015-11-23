@@ -71,3 +71,9 @@ barplot(data$reads_mapped_to_exons/1000000, names.arg=data$sample_name, las=2, c
 abline(h=10, col="red")
 dev.off()a
 ```
+
+HTSeq-count output -- distribution of mapped/non-uniquely mapped/unmapped reads
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/mapped_reads_htseq_distr.png)
+
+
