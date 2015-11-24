@@ -91,51 +91,40 @@ IL17A+GMCSF+IFN- samples);
 - `IFNG`, Ensembl ID `ENSG00000027697.8` should be expressed in IFN+ samples;
 - `PTPRC`, Ensembl ID `ENSG00000081237.14` should be expressed in all cells.
 
+(last columncontains the data for IL17A+GMCSF+IFN- samples)
 ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_outliars_VS_no_outliars.png)
-
-|     |     |
-| --- | --- |
-| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_CSF2.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IL17A.png) |
-| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_IFNg.png) |   ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_no_outliars_PTPRC.png)|
 
 
 ### Differential gene expression
 
 Number of reads mapped to known genes was calculated with
 [HTSeq](http://www-huber.embl.de/users/anders/HTSeq/doc/count.html)
-on the sorted bam files without duplcates.
+on the sorted bam files without duplcates using
+[GENCODE](http://www.gencodegenes.org/releases/19.html)
+Ensembl annotation.
 
 ```
 htseq-count --format=bam --stranded=reverse input.bam annotation
 ```
 
-[GENCODE](http://www.gencodegenes.org/releases/19.html)
-Ensembl annotation was used, howeve, the number of reads
-mapped to known genes is really low.
+The number of reads mapped to known exons was relatively low -- around
+60% of the number of mapped reads (after removing duplicates). However,
+differential expression analysis was still performed. The reason behind
+the low fraction of reads mapping to known exons remains unknown but is
+most probably due to a falty kit used to prepare total RNA for mRNA
+sequencing (Sequencing Core of WTCHG is investigating it at the moment).
 
-| sample name    | mapped reads | mapped to v19 | %mapped to v19| mapped to scaff | mapped to v22|
-| ---------------- | ---------- | --------- | ------- | ------- | --------- |
-| WTCHG_218577_201 | 21,101,017 | 6,617,021 | 31.3588 | 950,262 | 6,619,097 |
-| WTCHG_218577_202 | 20,517,020 | 6,502,143 | 31.6915 | 904,026 | 6,504,396 |
-| WTCHG_218577_203 | 20,959,603 | 6,707,152 | 32.0004 | 955,411 | 6,709,549 |
-| WTCHG_218577_204 | 16,931,513 | 5,549,960 | 32.7789 | 772,997 | 5,551,398 |
-| WTCHG_218577_205 | 19,181,889 | 5,969,109 | 31.1185 | 865,651 | 5,970,719 |
-| WTCHG_218577_206 | 19,180,449 | 5,866,103 | 30.5838 | 864,758 | 5,867,853 |
-| WTCHG_218577_207 | 12,384,130 | 3,544,313 | 28.6198 | 521,430 | 3,545,293 |
-| WTCHG_218577_208 | 15,884,901 | 4,884,147 | 30.7471 | 692,399 | 4,885,620 |
-| WTCHG_218577_209 |  9,205,932 | 2,656,030 | 28.8513 | 383,611 | 2,656,871 |
-| WTCHG_218577_210 | 21,033,443 | 6,431,498 | 30.5775 | 977,777 | 6,433,832 |
-| WTCHG_218577_211 | 19,549,866 | 6,240,346 | 31.9201 | 897,556 | 6,242,143 |
-| WTCHG_218577_212 | 19,256,351 | 6,126,567 | 31.8158 | 841,495 | 6,128,624 |
-| WTCHG_218577_213 |  8,219,354 | 2,300,508 | 27.9889 | 329,676 | 2,301,415 |
-| WTCHG_218577_214 | 20,946,987 | 6,648,301 | 31.7387 | 927,859 | 6,650,266 |
-| WTCHG_218577_215 | 21,229,271 | 6,807,790 | 32.0679 | 918,900 | 6,809,935 |
-| WTCHG_218577_216 | 19,634,585 | 6,067,773 | 30.9035 | 840,504 | 6,070,445 |
-| WTCHG_218577_217 |  5,270,723 | 1,444,490 | 27.4059 | 205,924 | 1,445,089 |
-| WTCHG_218577_218 | 14,243,085 | 4,344,011 | 30.4991 | 595,778 | 4,345,603 |
-| WTCHG_218577_219 |  4,625,853 | 1,390,807 | 30.066  | 190,958 | 1,391,718 |
-| WTCHG_218577_220 | 19,982,997 | 6,271,561 | 31.3845 | 867,748 | 6,273,386 |
+An `R` package `edgeR` was used for the differential gene expression
+analysis (DGE).
 
-The correlation between the number of nodup mapped reads and reads
-mapped to known genes is 0.998.
+**Number of differentially expressed genes**
+
+|                  | IL17A+GMCSF+IFN- | IL17A+ | IFN+ | CSF+ |
+| ---------------- | ---------------- | ------ | ---- | ---- |
+| CD45RA+Cyt-      | 121              | 208    | 170  | 100  |
+| CSF+             | 1                | 3      |  2   |      |
+| IFN+             | 10               | 12     |      |      |
+| IL17A+           | 4                |        |      |      |
+
+
 
