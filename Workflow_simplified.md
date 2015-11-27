@@ -155,39 +155,63 @@ we have the following amount of differentially expressed genes.
 
 Results of differentially expressed genes:
 
-[CD45RA+Cyt- vs CDF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.deseq.txt)
-[CD45RA+Cyt- vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.deseq.txt)
-[CD45RA+Cyt- vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.deseq.txt)
-[CD45RA+Cyt- vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2BGMCSF%2BINF-.deseq.txt)
-[CDF+ vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IFN%2B.deseq.txt)
-[CDF+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2B.deseq.txt)
-[CDF+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
-[IFN+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2B.deseq.txt)
-[IFN+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
-[IL17A+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IL17A%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
+- [CD45RA+Cyt- vs CDF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.deseq.txt)
+- [CD45RA+Cyt- vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.deseq.txt)
+- [CD45RA+Cyt- vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.deseq.txt)
+- [CD45RA+Cyt- vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2BGMCSF%2BINF-.deseq.txt)
+- [CDF+ vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IFN%2B.deseq.txt)
+- [CDF+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2B.deseq.txt)
+- [CDF+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
+- [IFN+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2B.deseq.txt)
+- [IFN+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
+- [IL17A+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IL17A%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
 
 
 Files containing only genes with FDR < 0.05:
 
-[CD45RA+Cyt- vs CDF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.sign.deseq.txt)
-[CD45RA+Cyt- vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.sign.deseq.txt)
-[CD45RA+Cyt- vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.sign.deseq.txt)
-[CD45RA+Cyt- vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
-[CDF+ vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IFN%2B.sign.deseq.txt)
-[CDF+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2B.sign.deseq.txt)
-[CDF+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
-[IFN+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2B.sign.deseq.txt)
-[IFN+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
-[IL17A+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IL17A%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
+- [CD45RA+Cyt- vs CDF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.sign.deseq.txt)
+- [CD45RA+Cyt- vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.sign.deseq.txt)
+- [CD45RA+Cyt- vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.sign.deseq.txt)
+- [CD45RA+Cyt- vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
+- [CDF+ vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IFN%2B.sign.deseq.txt)
+- [CDF+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2B.sign.deseq.txt)
+- [CDF+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
+- [IFN+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2B.sign.deseq.txt)
+- [IFN+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
+- [IL17A+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IL17A%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
 
 
 
-Next thing to do -- overlap of differentially expressed genes.
+### Overlap in differentially expressed genes
 
-1) Which are e.g. differences between the naive cells and the stimulated cells which are consistent?
+We would like to know e.g. which differences between the naive cells
+and the stimulated cells are consistent and which are unique per cell type.
+
+For **CD45+RA** we have a list of DE genes with CSF+, IL17A+, IFN+ and double-
+positive cells. These are the overlaps between the lists of DE genes (e.g.,
+an overlap between genes differentially expressed between CD45+RA_vs_CSF+ and
+CD45+RA_vs_IL17A+):
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/non_unique_DGE_for_CD45%2BRA.png)
+
+
+If we look at it from a different angle and address genes which
+are differentially expressed only between CD45+RA and each of the
+other four cell types, we will get the following numbers (and lists)
+of genes:
+
+- **262** genes unique for [CSF+ vs CD45+RA](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.sign.unique.gene_list.txt)
+- **144** genes unique for [IFN+ vs CD45+RA](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.sign.unique.gene_list.txt)
+- **3** genes unique for [IL17A+ vs CD45+RA](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.sign.unique.gene_list.txt)
+- **270** genes unique for [double positives vs CD45+RA](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2BGMCSF%2BINF-.sign.unique.gene_list.txt)
+
+
+
+
+More questions to answer:
+
 2) These differences -- do they fall in the same pathway?
 3) Individual differences -- do they fall in the same or different pathways?
-4) 
 
 
 
