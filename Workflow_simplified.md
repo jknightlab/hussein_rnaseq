@@ -127,4 +127,73 @@ analysis (DGE).
 | IL17A+           | 4                |        |      |      |
 
 
+### Updated DGE analysis
+
+1) Removing ouliars (samples having low number of reads):
+```
+KNI1766A285	WTCHG_218577_217	Sample:17	IL17A+
+KNI1766A287	WTCHG_218577_219	Sample:19	IL17A+GMCSF+IFN-
+```
+
+2) Selecting genes with at least 100 reads mapped across all samples.
+This step is done to get rid of all zero-count lines, which will
+otherwise be considered as observations and will increase the FDR.
+This left us with **14,864** expressed genes.
+
+3) Running [`DESeq`](https://github.com/jknightlab/hussein_rnaseq/blob/master/DESeq_code.R)
+to get lists of differentially expressed genes.
+
+
+Out of 14,864 expressed genes we have the following amount of differentially expressed genes.
+
+**FDR < 0.05**
+
+|                  | IL17A+GMCSF+IFN- | IL17A+ | IFN+ | CSF+  |
+| ---------------- | ---------------- | ------ | ---- | ----- |
+| CD45RA+Cyt-      | 1174             | 460    | 991  | 1311  |
+| CSF+             | 10               | 2      | 53   |       |
+| IFN+             | 203              | 42     |      |       |
+| IL17A+           | 3                |        |      |       |
+
+
+**P-value < 0.01 (this will be used for the pathway analysis):**
+
+|                  | IL17A+GMCSF+IFN- | IL17A+ | IFN+ | CSF+  |
+| ---------------- | ---------------- | ------ | ---- | ----- |
+| CD45RA+Cyt-      | 1498             | 753    | 1348 | 1676  |
+| CSF+             | 172              | 69     | 203  |       |
+| IFN+             | 492              | 193    |      |       |
+| IL17A+           | 71               |        |      |       |
+
+Lists of differentia
+
+
+
+
+Next thing to do -- overlap of differentially expressed genes.
+
+1) Which are e.g. differences between the naive cells and the stimulated cells which are consistent?
+2) These differences -- do they fall in the same pathway?
+3) Individual differences -- do they fall in the same or different pathways?
+4) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
