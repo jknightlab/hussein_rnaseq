@@ -114,20 +114,6 @@ the low fraction of reads mapping to known exons remains unknown but is
 most probably due to a falty kit used to prepare total RNA for mRNA
 sequencing (Sequencing Core of WTCHG is investigating it at the moment).
 
-An `R` package `edgeR` was used for the differential gene expression
-analysis (DGE).
-
-**Number of differentially expressed genes**
-
-|                  | IL17A+GMCSF+IFN- | IL17A+ | IFN+ | CSF+ |
-| ---------------- | ---------------- | ------ | ---- | ---- |
-| CD45RA+Cyt-      | 121              | 208    | 170  | 100  |
-| CSF+             | 1                | 3      |  2   |      |
-| IFN+             | 10               | 12     |      |      |
-| IL17A+           | 4                |        |      |      |
-
-
-### Updated DGE analysis
 
 1) Removing ouliars (samples having low number of reads):
 ```
@@ -144,7 +130,9 @@ This left us with **14,864** expressed genes.
 to get lists of differentially expressed genes.
 
 
-Out of 14,864 expressed genes we have the following amount of differentially expressed genes.
+Out of 14,864
+[expressed genes](https://github.com/jknightlab/hussein_rnaseq/blob/master/gene_count.noLowQual.above100.txt)
+we have the following amount of differentially expressed genes.
 
 **FDR < 0.05**
 
@@ -165,8 +153,32 @@ Out of 14,864 expressed genes we have the following amount of differentially exp
 | IFN+             | 492              | 193    |      |       |
 | IL17A+           | 71               |        |      |       |
 
-Lists of differentia
+Results of differentially expressed genes:
 
+[CD45RA+Cyt- vs CDF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.deseq.txt)
+[CD45RA+Cyt- vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.deseq.txt)
+[CD45RA+Cyt- vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.deseq.txt)
+[CD45RA+Cyt- vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2BGMCSF%2BINF-.deseq.txt)
+[CDF+ vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IFN%2B.deseq.txt)
+[CDF+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2B.deseq.txt)
+[CDF+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
+[IFN+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2B.deseq.txt)
+[IFN+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
+[IL17A+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IL17A%2B_IL17A%2BGMCSF%2BINF-.deseq.txt)
+
+
+Files containing only genes with FDR < 0.05:
+
+[CD45RA+Cyt- vs CDF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.sign.deseq.txt)
+[CD45RA+Cyt- vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.sign.deseq.txt)
+[CD45RA+Cyt- vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.sign.deseq.txt)
+[CD45RA+Cyt- vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
+[CDF+ vs IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IFN%2B.sign.deseq.txt)
+[CDF+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2B.sign.deseq.txt)
+[CDF+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CSF%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
+[IFN+ vs IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2B.sign.deseq.txt)
+[IFN+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IFN%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
+[IL17A+ vs IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_IL17A%2B_IL17A%2BGMCSF%2BINF-.sign.deseq.txt)
 
 
 
