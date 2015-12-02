@@ -144,7 +144,7 @@ we have the following amount of differentially expressed genes.
 | IL17A+           | 3                |        |      |       |
 
 
-**P-value < 0.01 (this will be used for the pathway analysis):**
+**FDR < 0.1 (this will be used for the pathway analysis):**
 
 |                  | IL17A+GMCSF+IFN- | IL17A+ | IFN+ | CSF+  |
 | ---------------- | ---------------- | ------ | ---- | ----- |
@@ -186,6 +186,29 @@ Files containing only genes with FDR < 0.05:
 
 We would like to know e.g. which differences between the naive cells
 and the stimulated cells are consistent and which are unique per cell type.
+
+Here we are comparing the DE between naive and stimulated cells from pure
+cell populations (CSF+, IFN+, IL17A+).
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/pure_cell_types_against_naive.png)
+
+Lists of genes used to create the Venn diagram:
+
+- [genes unique for CSF among pure cell populations](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.unique_in_pure_cell_types.txt)
+- [genes unique for IFN among pure cell populations](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.unique_in_pure_cell_types.txt)
+- [genes unique for IL17A among pure cell populations](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.unique_in_pure_cell_types.txt)
+
+
+- [genes common for CSF and IFN](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA%2BCyt-_common_genes_CSF_IFN.txt)
+- [genes common for CSF and IL17A](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA%2BCyt-_common_genes_CSF_IL17A.txt)
+- [genes common for IFN and IL17A](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA%2BCyt-_genes_IFN_IL17A.txt)
+
+- [genes common for all three pure cell populations](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA%2BCyt-_common_response_pure_celltypes.txt)
+
+
+
+
+
 
 For **CD45+RA** we have a list of DE genes with CSF+, IL17A+, IFN+ and double-
 positive cells. These are the overlaps between the lists of DE genes (e.g.,
