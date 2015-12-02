@@ -182,7 +182,7 @@ Files containing only genes with FDR < 0.05:
 
 
 
-### Overlap in differentially expressed genes
+### Response in pure cell populations
 
 We would like to know e.g. which differences between the naive cells
 and the stimulated cells are consistent and which are unique per cell type.
@@ -198,12 +198,49 @@ Lists of genes used to create the Venn diagram:
 - [genes unique for IFN among pure cell populations](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.unique_in_pure_cell_types.txt)
 - [genes unique for IL17A among pure cell populations](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.unique_in_pure_cell_types.txt)
 
-
 - [genes common for CSF and IFN](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA%2BCyt-_common_genes_CSF_IFN.txt)
 - [genes common for CSF and IL17A](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA%2BCyt-_common_genes_CSF_IL17A.txt)
 - [genes common for IFN and IL17A](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA%2BCyt-_genes_IFN_IL17A.txt)
 
 - [genes common for all three pure cell populations](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA%2BCyt-_common_response_pure_celltypes.txt)
+
+
+
+### Double positive cell lines
+
+Here we are checking whether double positive cell line (IL17A+GMCSF+INF-)
+is closer to CSF+, IFN+ or IL17A+.
+
+[These genes](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2BGMCSF%2BINF-.sign.unique.gene_list.txt) are differentially expressed only in IL17A+GMCSF+INF- against
+naive CD45+RA cells.
+
+For this figure, lists of genes differentially expressed in
+**double positives against naive cells** and other,
+**pure cell populations against naive cells**.
+
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/double_positives.png)
+
+Gene lists used in Venn diagrams:
+
+- [genes DE in double positives against naives, CSF against naives and IFN against naives](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_double_and_CSF_and_IFN.gene_list.txt)
+- [genes DE in double positives against naives, IFN against naives and IL17A against naives](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_double_and_IFN_and_IL17A.gene_list.txt)
+- [genes DE in double positives against  naives, CSF against naives, IL17A against naives](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_double_and_CSF_and_IL17A.gene_list.txt)
+
+- [genes DE in double positives against naives, CSF against naives](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_CSF%2B.sign.gene_list.txt)
+- [genes DE in double positives against naives, IFN against naives](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.sign.gene_list.txt)
+- [genes DE in double positives against naives, IL17A against naives](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.sign.gene_list.txt)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
