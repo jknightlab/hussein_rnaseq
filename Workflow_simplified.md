@@ -238,8 +238,7 @@ CSF+, IL17A+ or IL17A+GMCSF+INF-.
 
 | Venn             | scaled Venn  |
 | ---------------- | ------------ |
-| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/naive_vs_CSF_IL17A_double.venn.png)  | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/naive_vs_CSF_IL17A_double.venn.scaled.png) |
-
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/naive_vs_CSF_IL17A_double.venn.png)  | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/naive_vs_CSF_IL17A_double.venn.scaled.png) |
 
 Note that variable sizes of DGE lists make such comparison biased
 (three times fewer genes were identified in IL17A+ compared to CSF+).
@@ -258,9 +257,8 @@ cell lines.
 | IL17A+GMCSF+INF- | 390 (29.72%) | 30 (6.51%)  | 340 (28.94%)     |
 | common genes     | 414 (31.55%) | 414 (89.8%) | 414 (35.23%)     |
 
-To see the results of pathway analysis, click [here](https://github.com/jknightlab/hussein_rnaseq/blob/master/PART2).
-
-
+To see the results of pathway analysis, click
+[here](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/no_ifn.md).
 
 
 #### Designed by Irina Pulyakhina irina@well.ox.ac.uk
