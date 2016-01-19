@@ -187,10 +187,9 @@ Files containing only genes with FDR < 0.05:
 We would like to know e.g. which differences between the naive cells
 and the stimulated cells are consistent and which are unique per cell type.
 
-Here we are comparing the DE between naive and stimulated cells from pure
-cell populations (CSF+, IFN+, IL17A+).
+Scroll down to the figure to see how we are comparing the DE between naive
+and stimulated cells from pure cell populations (CSF+, IFN+, IL17A+).
 
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/pure_cell_types_against_naive.png)
 
 Lists of genes used to create the Venn diagram:
 
@@ -218,7 +217,10 @@ For this figure, lists of genes differentially expressed in
 **double positives against naive cells** and other,
 **pure cell populations against naive cells**.
 
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/double_positives.png)
+
+| Response against the naive | Double positive cells |
+| -------------------------- | --------------------- |
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/pure_cell_types_against_naive.png) | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/double_positives.png) |
 
 Gene lists used in Venn diagrams:
 
