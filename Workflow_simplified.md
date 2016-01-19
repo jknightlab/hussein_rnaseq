@@ -230,6 +230,39 @@ Gene lists used in Venn diagrams:
 - [genes DE in double positives against naives, IFN against naives](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IFN%2B.sign.gene_list.txt)
 - [genes DE in double positives against naives, IL17A against naives](https://github.com/jknightlab/hussein_rnaseq/blob/master/DGE_CD45RA%2BCyt-_IL17A%2B.sign.gene_list.txt)
 
+### CSF+, IL17A+ and IL17A+GMCSF+INF- against the naives
+
+Here we are comparing differentially expressed genes between
+the naive cell line and any of the three following cell lines:
+CSF+, IL17A+ or IL17A+GMCSF+INF-.
+
+| Venn             | scaled Venn  |
+| ---------------- | ------------ |
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/naive_vs_CSF_IL17A_double.venn.png)  | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/naive_vs_CSF_IL17A_double.venn.scaled.png) |
+
+
+Note that variable sizes of DGE lists make such comparison biased
+(three times fewer genes were identified in IL17A+ compared to CSF+).
+This table contains both numbers and the percentages of DE genes
+in different categories. E.g., cell first left most cell **499** **(38.03%)**
+means that 499 genes are unique for CSF+, and 499 makes 38.03% of
+all genes identified as differentially expressed between CSF+ and naive.
+Row "common genes" contains the number of genes common for all three
+cell lines.
+
+
+| na               | CSF+         | IL17A+      | IL17A+GMCSF+INF- |
+| ---------------- | ------------ | ----------- | ---------------- |
+| CSF+             | 499 (38.03%) | 8 (1.74%)   | 390 (33.19%)     |
+| IL17A+           | 8 (0.61%)    | 6 (1.3%)    | 30 (2.55%)       |
+| IL17A+GMCSF+INF- | 390 (29.72%) | 30 (6.51%)  | 340 (28.94%)     |
+| common genes     | 414 (31.55%) | 414 (89.8%) | 414 (35.23%)     |
+
+To see the results of pathway analysis, click [here](https://github.com/jknightlab/hussein_rnaseq/blob/master/PART2).
+
+
 
 
 #### Designed by Irina Pulyakhina irina@well.ox.ac.uk
+
+
