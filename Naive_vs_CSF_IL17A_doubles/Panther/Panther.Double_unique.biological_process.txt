@@ -1,0 +1,13 @@
+1	cellular_component_organization_or_biogenesis_(GO:0071840)	6	4.4%	2.6%
+2	cellular_process_(GO:0009987)	53	39.0%	23.0%
+3	localization_(GO:0051179)	21	15.4%	9.1%
+4	apoptotic_process_(GO:0006915)	2	1.5%	0.9%
+5	reproduction_(GO:0000003)	4	2.9%	1.7%
+6	biological_regulation_(GO:0065007)	31	22.8%	13.5%
+7	response_to_stimulus_(GO:0050896)	11	8.1%	4.8%
+8	developmental_process_(GO:0032502)	14	10.3%	6.1%
+9	multicellular_organismal_process_(GO:0032501)	10	7.4%	4.3%
+10	locomotion_(GO:0040011)	1	0.7%	0.4%
+11	biological_adhesion_(GO:0022610)	5	3.7%	2.2%
+12	metabolic_process_(GO:0008152)	67	49.3%	29.1%
+13	immune_system_process_(GO:0002376)	5	3.7%	2.2%

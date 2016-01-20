@@ -1,0 +1,8 @@
+1	nucleic_acid_binding_transcription_factor_activity_(GO:0001071)	14	9.3%	8.9%
+2	binding_(GO:0005488)	44	29.1%	27.8%
+3	receptor_activity_(GO:0004872)	18	11.9%	11.4%
+4	enzyme_regulator_activity_(GO:0030234)	12	7.9%	7.6%
+5	structural_molecule_activity_(GO:0005198)	9	6.0%	5.7%
+6	catalytic_activity_(GO:0003824)	47	31.1%	29.7%
+7	protein_binding_transcription_factor_activity_(GO:0000988)	1	0.7%	0.6%
+8	transporter_activity_(GO:0005215)	13	8.6%	8.2%
