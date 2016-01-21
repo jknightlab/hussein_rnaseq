@@ -259,6 +259,13 @@ cell lines.
 | IL17A+GMCSF+INF- | 390 (29.72%) | 30 (6.51%)  | 340 (28.94%)     |
 | common genes     | 414 (31.55%) | 414 (89.8%) | 414 (35.23%)     |
 
+**Gene lists**
+
+- [Genes common for all three cell lines](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/common_genes_three_cell_lines.txt)
+- [Genes common for CSF+ and IL17A+GMCSF+INF-](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/CSF_double.gene_list.txt)
+- [Genes unique for CSF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/CSF_unique.gene_list.txt)
+- [Genes unique for IL17A+GMCSF+INF-](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/Double_unique.gene_list.txt)
+
 To see the results of pathway analysis, click
 [here](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/no_ifn.md).
 
