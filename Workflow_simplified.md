@@ -238,7 +238,7 @@ Here we are comparing differentially expressed genes between
 the naive cell line and any of the three following cell lines:
 CSF+, IL17A+ or IL17A+GMCSF+INF-.
 
-| Venn             | scaled Venn  |
+| scaled Venn      | Venn         |
 | ---------------- | ------------ |
 | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/naive_vs_CSF_IL17A_double.venn.png)  | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/naive_vs_CSF_IL17A_double.venn.scaled.png) |
 
