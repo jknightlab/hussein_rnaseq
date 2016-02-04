@@ -97,7 +97,9 @@ Extra:
 - `TBX21`, Ensembl ID `ENSG00000073861`;
 - `RORC`, Ensemble ID `ENSG00000143365`.
 
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_outliars_VS_no_outliars.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_1.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_2.png)
+![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_3.png)
 
 
 ### Differential gene expression
