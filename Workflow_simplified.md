@@ -80,7 +80,8 @@ Plots with general statistics:
 
 Samples with less than 6 mln mapped non-duplicate reads were not
 considered for this analysis. *Outliar* samples (sample 11 and
-sample 15) were not considered for this analysis either. Expression
+sample 15) were not considered for this analysis either.
+[Expression](https://github.com/jknightlab/hussein_rnaseq/blob/master/Expression_boxplots/gene_expression.norm_nodup.txt)
 was calculated as read counts normalized for the number of reads
 mapped without duplicates.
 
@@ -91,7 +92,11 @@ IL17A+GMCSF+IFN- samples);
 - `IFNG`, Ensembl ID `ENSG00000027697.8` should be expressed in IFN+ samples;
 - `PTPRC`, Ensembl ID `ENSG00000081237.14` should be expressed in all cells.
 
-(last columncontains the data for IL17A+GMCSF+IFN- samples)
+Extra:
+
+- `TBX21`, Ensembl ID `ENSG00000073861`;
+- `RORC`, Ensemble ID `ENSG00000143365`.
+
 ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/controls_expression_outliars_VS_no_outliars.png)
 
 
