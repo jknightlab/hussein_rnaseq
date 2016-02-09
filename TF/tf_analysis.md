@@ -25,7 +25,7 @@ IL17A+CSF+IFN- against the naive cells. Here are the full lists:
 
 - 8.38% (110 out of 1,312) DE genes for [CSF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/CSF+.all_TFs.txt)
  were transcription facters;
-- 8.37% (83 out of 992) DE genes for [IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IDF+.all_TFs.txt)
+- 8.37% (83 out of 992) DE genes for [IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IFN+.all_TFs.txt)
  were transcription facters;
 - 6.51% (30 out of 461) DE genes for [IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IL17A+.all_TFs.txt)
  were transcription facters;
@@ -46,15 +46,14 @@ were transcription facters;
 
 We also looked at trancription factors unique across **all** cell lines:
 
-- 8.05% (21 out of 261) DE genes for **CSF+** were transcription facters;
-- 6.99% (10 out of 143) DE genes for **IFN+** were transcription facters;
-- no (0 out of 3) DE genes for **IL17A+** were transcription facters;
-- 7.14%% (20 out of 280) DE genes for **IL17A+GMCSF+IFN-** were transcription facters;
-
-[CSF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/CSF+.unique_in_all.txt)
-[IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IFN+.unique_in_all.txt)
-[IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IL17A+.unique_in_all.txt)
-[IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IL17A+GMCSF+IFN-.unique_in_all.txt)
+- 8.05% (21 out of 261) DE genes for [CSF+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/CSF+.unique_in_all.txt)
+ were transcription facters;
+- 6.99% (10 out of 143) DE genes for [IFN+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IFN+.unique_in_all.txt)
+were transcription facters;
+- no (0 out of 3) DE genes for [IL17A+](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IL17A+.unique_in_all.txt)
+were transcription facters;
+- 7.14%% (20 out of 280) DE genes for [IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IL17A+GMCSF+IFN-.unique_in_all.txt)
+ were transcription facters;
 
 #### ToDo
 
