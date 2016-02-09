@@ -55,10 +55,22 @@ were transcription facters;
 - 7.14%% (20 out of 280) DE genes for [IL17A+GMCSF+IFN-](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/IL17A+GMCSF+IFN-.unique_in_all.txt)
  were transcription facters;
 
-#### ToDo
+#### Common transcription factors
 
-Look at transcription factors in genes common between cell lines.
+We also looked at transcription factors found in the gene signature of all pure
+cell types (CSF+, IFN+, IL17A+). At this stage we are not looking at
+IL17A+GMCSF+IFN- genes. Out of the list of
+[339 genes common for three pure cell types](https://github.com/jknightlab/hussein_rnaseq/blob/master/CD45RA+Cyt-_common_response_pure_celltypes.txt)
+we found 
+[25 transcription factors](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/common_response_pure_celltypes.TF.txt)
+(7.37%).
 
+When we look at transcription factors present in CSF+, IL17A+ and
+IL17A+GMCSF+IFN-, out of
+[414 common genes](https://github.com/jknightlab/hussein_rnaseq/blob/master/Naive_vs_CSF_IL17A_doubles/common_genes_three_cell_lines.txt)
+we found 
+[28 transcription factors](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/common_response_CSF_IL17A_doubles.TF.txt)
+(6.76%).
 
 
 #### Designed by Irina Pulyakhina irina@well.ox.ac.uk
