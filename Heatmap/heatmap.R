@@ -12,3 +12,7 @@ pdf("gene_expression.clustered.heatmap.pdf", width=20, height=20)
 heatmap.2(genes.M, Rowv=as.dendrogram(hr), Colv=as.dendrogram(hc), scale="row", density.info="none", trace="none", margins = c(14, 1), main=" ", tracecol=NA, col=my_palette)
 dev.off()
 
+## larger font size
+
+heatmap.2(genes.M, Rowv=as.dendrogram(hr), Colv=as.dendrogram(hc), scale="row", density.info="none", trace="none", margins = c(14, 1), main=" ", tracecol=NA, col=my_palette, cexCol=1.5)
+
