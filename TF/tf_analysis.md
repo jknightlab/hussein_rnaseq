@@ -72,7 +72,7 @@ we found
 [28 transcription factors](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/common_response_CSF_IL17A_doubles.TF.txt)
 (6.76%).
 
-**TFs unique/shared across different cell types**
+#### TFs unique/shared across different cell types
 
 ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/tf_venn.png)
 
