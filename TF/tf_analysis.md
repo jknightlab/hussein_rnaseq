@@ -74,6 +74,9 @@ we found
 
 #### TFs unique/shared across different cell types
 
-![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/tf_venn.png)
+|     |     |
+| --- | --- |
+| ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/tf_venn.png) | ![alt text](https://github.com/jknightlab/hussein_rnaseq/blob/master/TF/tf_quadrup_venn.png) |
+
 
 #### Designed by Irina Pulyakhina irina@well.ox.ac.uk
